@@ -1,7 +1,7 @@
 This repo contains Python scripts to help automate the process of localizing content on a Zendesk Web portal.
 
-The following article on the Zendesk website explains how to use the scripts in the **initial_handoff_wp** folder:
+The following article on the Zendesk website explains how to use the scripts in the "initial_handoff_wp" folder:
 
-- [Automating your first localization handoff (Web portal)](https://support.zendesk.com/entries/51237108)
+- Automating your first localization handoff (Web portal) - https://support.zendesk.com/entries/51237108
 
-The scripts are based on custom automation scripts the docs team at Zendesk uses to localize the [Zendesk documentation](https://support.zendesk.com/categories/12128). Please note that the scripts aren't official Zendesk features and aren't supported.
+The scripts are based on custom automation scripts the docs team at Zendesk uses to localize the Zendesk documentation. Please note that the scripts aren't official Zendesk features and aren't supported.
