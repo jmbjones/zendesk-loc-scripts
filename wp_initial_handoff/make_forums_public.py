@@ -34,7 +34,7 @@ for locale in locales:
         url = 'https://{}.zendesk.com/api/v2/forums/{}.json'.format(subdomain, forum)
         response = session.put(url, data=payload)
         if response.status_code != 200:
-            Print('Status:', response.status_code, 'Problem with the put request. Exiting.')
+            print('Status:', response.status_code, 'Problem with the put request. Exiting.')
             exit()
         print('Forum {} successfully updated.'.format(forum))
     count += 1

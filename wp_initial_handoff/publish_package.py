@@ -6,6 +6,7 @@ import sqlite3
 import requests
 from bs4 import BeautifulSoup, Comment
 
+
 def main():
     subdomain = 'your_subdomain'          # setting
     email = 'your_email'                  # setting
@@ -30,12 +31,14 @@ def main():
 #-------------------------------------------------------------------------------
 # FUNCTIONS
 
+
 def get_map(locale):
     db = sqlite3.connect('kb.db')
     rows = db.execute('SELECT topic_id, topic_{} FROM topics'.format(locale))
     topic_map = {row[0]: row[1] for row in rows}
     db.close()
     return topic_map
+
 
 def create_payload(file):
     with open(file, mode='r', encoding='utf-8') as f:
@@ -54,12 +57,14 @@ def create_payload(file):
     data = {'topic': {'title': title, 'body': str(tree)}}
     return json.dumps(data)
 
+
 def put_article(payload, url, session):
     response = session.put(url, data=payload)
     if response.status_code != 200:
         print('Status:', response.status_code, 'Problem with the put request. Exiting.')
         exit()
     print('Topic updated successfully.')
+
 
 #-------------------------------------------------------------------------------
 # RUN SCRIPT

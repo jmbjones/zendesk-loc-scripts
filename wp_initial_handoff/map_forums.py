@@ -20,7 +20,7 @@ new_categories = []
 url = 'https://{}.zendesk.com/api/v2/categories.json'.format(subdomain)
 for locale in locale_names:
     name = 'Documentation - {}'.format(locale)
-    data = { 'category': { 'name': name }}
+    data = {'category': {'name': name}}
     payload = json.dumps(data)
     response = session.post(url, data=payload)
     data = response.json()
