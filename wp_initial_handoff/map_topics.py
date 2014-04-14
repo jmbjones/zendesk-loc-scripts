@@ -2,9 +2,9 @@ import sqlite3
 import json
 import requests
 
-subdomain = '{your_subdomain}'              # setting
-email = '{your_email}'                      # setting
-password = '{your_zd_password}'             # setting
+subdomain = 'your_subdomain'              # setting
+email = 'your_email'                      # setting
+password = 'your_zd_password'             # setting
 session = requests.Session()
 session.auth = (email, password)
 session.headers = {'Content-Type': 'application/json'}
