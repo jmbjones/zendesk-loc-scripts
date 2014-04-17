@@ -8,3 +8,5 @@ wp_initial_handoff/.idea/modules.xml
 *.xml
 
 *.iml
+
+.idea/.name
